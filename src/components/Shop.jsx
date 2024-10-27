@@ -276,6 +276,7 @@ const Shop = () => {
   );
 
   return (
+    <div className="shopC">
     <section className="w-full py-10 px-5">
       <div className="flex justify-center space-x-10" role="tablist" aria-orientation="horizontal">
         <button
@@ -311,6 +312,7 @@ const Shop = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

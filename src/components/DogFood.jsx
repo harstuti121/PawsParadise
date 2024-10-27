@@ -5,6 +5,7 @@ import i2 from '../assets/pd1.jpg';
 import i3 from '../assets/pd3.jpg';
 import i4 from '../assets/pd4.jpg';
 import i5 from '../assets/pd5.jpg';
+import './DogFood.css';
 
 const DogFoodData = [
   { id: 1, title: "Beaphar Green Tea Extract & Aloe Vera Shiny White Coat Dog Shampoo 250 ml", price: "Rs 350", rating: 5, image: i1 },
@@ -21,8 +22,9 @@ const DogFoodData = [
   { id: 8, title: "Petlife Dog Shampoo with Neem and Aloe 500 ml", price: "Rs 450", rating: 3, image: i1 },
 ];
 
-export default function DogFood() {
+const DogFood=()=> {
   return (
+    <div className="Df">
     <section className="py-10 bg-gray-100">
       <div className="container mx-auto">
         {/* <h2 className="text-4xl font-bold mb-8 text-center">Recommended Products</h2> */}
@@ -50,6 +52,8 @@ export default function DogFood() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
+export default DogFood;
