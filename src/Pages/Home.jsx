@@ -5,6 +5,9 @@ import Recomended from '../components/Recomended'
 import RecentArticles from '../components/Articles'
 import Product from '../components/Product'
 import Animated from '../components/Animated'
+import Contact from '../components/Contact'
+import Recentart from '../components/Recentart';
+
 const Home = () => {
   return (
     <>
@@ -13,6 +16,8 @@ const Home = () => {
       <Product />
       <Recomended/>
       <RecentArticles />
+      <Contact/>
+      {/* <Recentart/> */}
     </>
   )
 }

@@ -2,4 +2,9 @@
     display:flex;
     padding: 80px;
     margin: 1%;
+    position: relative;
+}
+
+form{
+    width: 60%;
 }
