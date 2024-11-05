@@ -1,7 +1,6 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BsCart3 } from "react-icons/bs";
-import { IoIosNotificationsOutline } from "react-icons/io";
 import { CartContext } from './CartContext'; // Ensure this is the correct path to your CartContext
 
 export default function Navbar() {
@@ -48,9 +47,7 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center space-x-4 relative">
-          <button className="bg-yellow-500 p-2 rounded focus:outline-none">
-            <IoIosNotificationsOutline />
-          </button>
+          
           <button className="bg-yellow-500 p-2 rounded focus:outline-none relative" onClick={handleCartToggle}>
             <BsCart3 />
             {cartItems.length > 0 && (

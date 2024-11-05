@@ -1,27 +1,4 @@
-// // CartContext.js
-// import React, { createContext, useState } from 'react';
-
-// // Create a context for the cart
-// export const CartContext = createContext();
-
-// // Create a provider component
-// export const CartProvider = ({ children }) => {
-//   const [cartItems, setCartItems] = useState([]);
-
-//   const addToCart = (item) => {
-//     setCartItems((prevItems) => [...prevItems, item]);
-//   };
-
-//   return (
-//     <CartContext.Provider value={{ cartItems, addToCart }}>
-//       {children}
-//     </CartContext.Provider>
-//   );
-// };
-
-// CartContext.jsx
-
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 // Create a context
 export const CartContext = createContext();
@@ -44,3 +21,5 @@ export const CartContextProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+
+export const useCart = () => useContext(CartContext);
